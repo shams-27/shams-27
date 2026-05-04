@@ -100,11 +100,23 @@ A file-based C project for managing employee records, payroll, and attendance vi
 
 </td>
 </tr>
-</table>
 
-<a href="https://github.com/khaliduzzamantanoy?tab=repositories">
- 
-</a>
+<tr>
+<td width="50%">
+
+### shams_gcc
+<a href="https://github.com/ShamsKabir/tools">
+  </a>
+
+**Tech Stack:** Powershell
+
+Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell command. No manual downloading, no PATH headaches.
+
+[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/ShamsKabir/tools)
+
+</td>
+</tr>
+</table>
 
 </div>
 
