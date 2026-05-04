@@ -104,7 +104,7 @@ A file-based C project for managing employee records, payroll, and attendance vi
 <tr>
 <td width="50%">
 
-### shams_gcc
+### Auto GCC Solution
 <a href="https://github.com/ShamsKabir/tools">
   </a>
 
