@@ -31,6 +31,20 @@ jobs:
           plugin_languages_categories: programming, markup, stylesheet, data
           plugin_languages_colors: "C:#7A9BB5, C++:#A67AB5, Bash:#7AB58A, PowerShell:#B5A87A, HTML:#B5775A, CSS:#5AB5A8, JavaScript:#B5B55A, Java:#B5645A, Python:#5A7AB5, Markdown:#999999"
           plugin_languages_threshold: 0%
+      - name: Generate contribution graph
+        uses: Platane/snk@v3
+        with:
+          github_user_name: shams-27
+          github_token: ${{ secrets.METRICS_TOKEN }}
+          outputs: |
+            github-contribution-grid.svg?palette=github-dark
+            github-contribution-grid-snake.gif?palette=github-dark
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          options: user=shams-27&theme=onedark-duo&hide_border=true&disable_animations=false
+          path: github-streak.svg
       - name: Mute text colors in metrics SVG
         run: |
           python3 << 'EOF'
@@ -59,20 +73,6 @@ jobs:
           with open("github-metrics.svg", "w") as f:
               f.write(content)
           EOF
-      - name: Generate contribution graph
-        uses: Platane/snk@v3
-        with:
-          github_user_name: shams-27
-          github_token: ${{ secrets.METRICS_TOKEN }}
-          outputs: |
-            github-contribution-grid.svg?palette=github-dark
-            github-contribution-grid-snake.gif?palette=github-dark
-      - name: Generate streak stats
-        uses: DenverCoder1/github-readme-streak-stats@main
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          options: user=shams-27&theme=onedark-duo&hide_border=true&disable_animations=false
-          path: github-streak.svg
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
