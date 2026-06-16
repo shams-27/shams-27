@@ -29,7 +29,7 @@ jobs:
           plugin_languages_details: percentage, lines
           plugin_languages_limit: 8
           plugin_languages_categories: programming, markup, stylesheet, data
-          plugin_languages_colors: "PowerShell:#00F5FF, C:#FF2D78, Python:#A78BFA, JavaScript:#FBBF24"
+          plugin_languages_colors: "C:#7A9BB5, C++:#9B7A9E, Bash:#7A9E7A, PowerShell:#7A9EB5, HTML:#B5907A, CSS:#7A9E9B, JavaScript:#B5A87A, Java:#B5847A, Python:#7A8FB5, Markdown:#9E9E9E"
           plugin_languages_threshold: 0%
       - name: Generate contribution graph
         uses: Platane/snk@v3
