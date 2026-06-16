@@ -50,20 +50,19 @@ jobs:
           python3 << 'EOF'
           with open("github-metrics.svg", "r") as f:
               content = f.read()
-              
+
+          # Inject custom CSS override before closing </style> tag
           custom_css = """
-          <style>          
-            text, span, div, h2, h3, small, .field {
+            h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
               fill: #8A9AA8 !important;
             }
             h2.field, h3.field {
               color: #7A9AA8 !important;
             }
-          </style>
           """
 
-          content = content.replace('</svg>', custom_css + '</svg>', 1)
+          content = content.replace('</style>', custom_css + '</style>', 1)
 
           with open("github-metrics.svg", "w") as f:
               f.write(content)
