@@ -13,6 +13,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      
       - name: Generate metrics image
         uses: lowlighter/metrics@latest
         with:
@@ -31,6 +32,7 @@ jobs:
           plugin_languages_categories: programming, markup, stylesheet, data
           plugin_languages_colors: "C:#7A9BB5, C++:#A67AB5, Bash:#7AB58A, PowerShell:#B5A87A, HTML:#B5775A, CSS:#5AB5A8, JavaScript:#B5B55A, Java:#B5645A, Python:#5A7AB5, Markdown:#999999"
           plugin_languages_threshold: 0%
+
       - name: Generate contribution graph
         uses: Platane/snk@v3
         with:
@@ -39,19 +41,22 @@ jobs:
           outputs: |
             github-contribution-grid.svg?palette=github-dark&color_snake=#7A9AA8
             github-contribution-grid-snake.gif?palette=github-dark&color_snake=#7A9AA8
+
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           options: user=shams-27&theme=onedark-duo&hide_border=true&disable_animations=false
           path: github-streak.svg
+
       - name: Mute text colors in metrics SVG
         run: |
           python3 << 'EOF'
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
-          custom_css = """
+          # Enclosing style rules cleanly inside an isolated <style> tag
+          custom_css = """<style>
             h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
               fill: #8A9AA8 !important;
@@ -59,13 +64,15 @@ jobs:
             h2.field, h3.field {
               color: #7A9AA8 !important;
             }
-          """
+          </style>"""
 
-          content = content.replace('</style>', custom_css + '</style>', 1)
+          # Safe target: replace the closing SVG tag right at the file's end
+          content = content.replace('</svg>', custom_css + '</svg>', 1)
 
           with open("github-metrics.svg", "w") as f:
               f.write(content)
           EOF
+
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
@@ -73,14 +80,3 @@ jobs:
           git add github-metrics.svg github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
           git commit -m "Update metrics, streak stats and contribution graph" || exit 0
           git push --force origin main
-        
-
-
-
-
-
-
-
-
-
-          
