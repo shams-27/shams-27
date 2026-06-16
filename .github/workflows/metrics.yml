@@ -29,8 +29,13 @@ jobs:
           plugin_languages_details: percentage, lines
           plugin_languages_limit: 8
           plugin_languages_categories: programming, markup, stylesheet, data
-          plugin_languages_colors: "C:#7A9BB5, C++:#9B7A9E, Bash:#7A9E7A, PowerShell:#7A9EB5, HTML:#B5907A, CSS:#7A9E9B, JavaScript:#B5A87A, Java:#B5847A, Python:#7A8FB5, Markdown:#9E9E9E"
+          plugin_languages_colors: "C:#7A9BB5, C++:#A67AB5, Bash:#7AB58A, PowerShell:#B5A87A, HTML:#B5775A, CSS:#5AB5A8, JavaScript:#B5B55A, Java:#B5645A, Python:#5A7AB5, Markdown:#999999"
           plugin_languages_threshold: 0%
+      - name: Mute text colors in metrics SVG
+        run: |
+          sed -i 's/fill="#e1e4e8"/fill="#8A9AA8"/g' github-metrics.svg
+          sed -i 's/fill="white"/fill="#8A9AA8"/g' github-metrics.svg
+          sed -i 's/fill="#cdd9e5"/fill="#7A8A9A"/g' github-metrics.svg
       - name: Generate contribution graph
         uses: Platane/snk@v3
         with:
