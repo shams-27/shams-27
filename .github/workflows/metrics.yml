@@ -32,9 +32,13 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 4
 
-          # Calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+      - name: Generate contribution graph
+        uses: Platane/snk@v3
+        with:
+          github_user_token: ${{ secrets.METRICS_TOKEN }}
+          outputs: |
+            github-contribution-grid.svg
+            github-contribution-grid-snake.gif
 
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
@@ -43,11 +47,11 @@ jobs:
           options: user=shams-27&theme=dark&hide_border=true&disable_animations=true
           path: github-streak.svg
 
-      - name: Commit streak stats
+      - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add github-streak.svg
-          git commit -m "Update streak stats" || exit 0
+          git add github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
+          git commit -m "Update streak stats and contribution graph" || exit 0
           git pull --rebase origin main
           git push
