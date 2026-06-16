@@ -57,6 +57,7 @@ jobs:
 
           # Inject custom CSS override before closing </style> tag
           custom_css = """
+          <![CDATA[
             h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
               fill: #8A9AA8 !important;
@@ -64,6 +65,7 @@ jobs:
             h2.field, h3.field {
               color: #7A9AA8 !important;
             }
+          ]]
           """
 
           content = content.replace('</style>', custom_css + '</style>', 1)
