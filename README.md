@@ -131,6 +131,10 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
           <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-metrics.svg" alt="GitHub Metrics" width="100%" style="display: block; border-radius: 4px;" />
         </td>
       </tr>
+      <tr>
+        <td style="padding: 12px; align: center">
+          <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-streak.svg" alt="GitHub Streak" width="100%" style="display: block; border-radius: 4px;" />
+        </td>
     </tbody>
   </table>
 </div>
