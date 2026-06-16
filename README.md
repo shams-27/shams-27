@@ -12,16 +12,12 @@
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
 
-<p align="center">
-  <img src="https://github.com/ShamsKabir/ShamsKabir/blob/output/github-snake-dark.svg" />
-</p>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
-
 <div align="center">
-
-<img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" />
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shams-27/shams-27/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shams-27/shams-27/output/github-contribution-grid-snake.svg">
+    <img alt="shams-27's Github Contribution Snake" src="https://raw.githubusercontent.com/shams-27/shams-27/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
