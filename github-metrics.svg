@@ -73,6 +73,17 @@
     color: #7A9AA8 !important;
   }
 </style>
+
+<style>
+              
+  text, span, div, h2, h3, small, .field {
+    color: #8A9AA8 !important;
+    fill: #8A9AA8 !important;
+  }
+  h2.field, h3.field {
+    color: #7A9AA8 !important;
+  }
+</style>
 </svg>
                             Joined GitHub 1 day ago
                         </div>
