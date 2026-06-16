@@ -72,6 +72,9 @@ jobs:
 
           with open("github-metrics.svg", "w") as f:
               f.write(content)
+
+          count = content.count('#54aeff') + content.count('#54AEFF')
+          print(f"Found #54aeff: {count} times before replace")
           EOF
       - name: Commit generated files
         run: |
