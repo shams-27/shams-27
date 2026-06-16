@@ -1,5 +1,4 @@
 name: Generate Profile Metrics
-
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -7,7 +6,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -19,27 +17,26 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
-          
+
           user: shams-27
           template: classic
-          
-          # Minimal base: keeps core stats but drops heavy graphical activity cards
-          base: header
+
+          base: header, activity
           config_timezone: UTC
-          
-          # Sets a beautiful, low-contrast muted color scheme
-          config_presets: nord
-          
-          # Clean, spacious alignment with no icons or extra lines
+
+          # Muted, low-contrast dark theme — alternative to nord
+          # If you don't like it, swap for @dimmed or @onedark (same single line)
+          config_presets: "@gotham"
+
           config_padding: 4%
-          config_order: base.header, languages
-          
-          # Minimalist languages chart (simple text percentages instead of massive bars)
+          config_order: base.header, base.activity, languages, repositories
+
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 4
-          
 
-
-          
+          # Repo card: now actually rendered (limit raised from 0)
+          plugin_repositories: yes
+          plugin_repositories_affiliations: owner
+          plugin_repositories_limit: 4
