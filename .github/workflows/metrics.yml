@@ -45,7 +45,7 @@ jobs:
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          options: user=shams-27&theme=dark&hide_border=true&disable_animations=true
+          options: user=shams-27&theme=onedark-duo&hide_border=true&disable_animations=false
           path: github-streak.svg
 
       - name: Commit generated files
