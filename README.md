@@ -117,16 +117,9 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 <div align="center">
   <table style="border-collapse: collapse; border: 1px solid #3b4252; background-color: #2e3440; border-radius: 8px; font-family: sans-serif; width: 100%; max-width: 600px;">
-    <thead>
-      <tr style="border-bottom: 1px solid #3b4252;">
-        <th style="padding: 16px; text-align: left; color: #81a1c1; font-size: 16px; font-weight: 600; letter-spacing: 0.5px;">
-          PROFILES & METRICS
-        </th>
-      </tr>
-    </thead>
     <tbody>
       <tr>
-        <td style="padding: 12px; align: center;">
+        <td style="padding: 12px; align: center">
           <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-metrics.svg" alt="GitHub Metrics" width="100%" style="display: block; border-radius: 4px;" />
         </td>
       </tr>
