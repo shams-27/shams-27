@@ -48,10 +48,21 @@ jobs:
       - name: Mute text colors in metrics SVG
         run: |
           python3 << 'EOF'
+          import re
+
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
-          # Inject custom CSS override before closing </style> tag
+          # Replace base64 avatar with a clean icon
+          avatar_icon = '''<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><path fill="#7A9AA8" fill-rule="evenodd" d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM8 8a4 4 0 00-4 4h8a4 4 0 00-4-4z"/></svg>'''
+
+          content = re.sub(
+              r'<img class="avatar"[^>]*>',
+              avatar_icon,
+              content
+          )
+
+          # Inject custom CSS
           custom_css = """
             h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
@@ -61,7 +72,6 @@ jobs:
               color: #7A9AA8 !important;
             }
           """
-
           content = content.replace('</style>', custom_css + '</style>', 1)
 
           with open("github-metrics.svg", "w") as f:
