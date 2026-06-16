@@ -47,35 +47,23 @@ jobs:
           path: github-streak.svg
       - name: Mute text colors in metrics SVG
         run: |
-          python3 << 'EOF'
-          import re
-
-          with open("github-metrics.svg", "r") as f:
-              content = f.read()
-
-          replacements = {
-              # Blue accent text (most likely culprits for the blue labels)
-              '#54aeff': '#7A9AA8',
-              '#0969da': '#7A9AA8',
-              '#0366d6': '#7A9AA8',
-              '#b6e3ff': '#7A9AA8',
-              '#0a3069': '#6A7A88',
-              # Light/white text
-              '#d1d5da': '#8A9AA8',
-              '#959da5': '#7A8A9A',
-              '#666':    '#7A8A9A',
-              '#777':    '#7A8A9A',
-          }
-
-          for original, muted in replacements.items():
-              content = re.sub(original, muted, content, flags=re.IGNORECASE)
-
-          with open("github-metrics.svg", "w") as f:
-              f.write(content)
-
-          count = content.count('#54aeff') + content.count('#54AEFF')
-          print(f"Found #54aeff: {count} times before replace")
-          EOF
+          sudo apt-get install -y xmlstarlet
+          
+          # Replace all text fill colors
+          xmlstarlet ed -L \
+            -u '//*[@fill="#54aeff"]/@fill' -v '#7A9AA8' \
+            -u '//*[@fill="#0969da"]/@fill' -v '#7A9AA8' \
+            -u '//*[@fill="#0366d6"]/@fill' -v '#7A9AA8' \
+            -u '//*[@fill="#d1d5da"]/@fill' -v '#8A9AA8' \
+            -u '//*[@fill="#959da5"]/@fill' -v '#7A8A9A' \
+            github-metrics.svg
+          
+          # Handle colors inside style attributes
+          sed -i 's/color:#54aeff/color:#7A9AA8/gi' github-metrics.svg
+          sed -i 's/color:#0969da/color:#7A9AA8/gi' github-metrics.svg
+          sed -i 's/color:#0366d6/color:#7A9AA8/gi' github-metrics.svg
+          sed -i 's/color:#d1d5da/color:#8A9AA8/gi' github-metrics.svg
+          sed -i 's/color:#959da5/color:#7A8A9A/gi' github-metrics.svg
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
