@@ -22,34 +22,25 @@ jobs:
           
           user: shams-27
           template: classic
-          base: header, community, activity
+          
+          # Minimal base: keeps core stats but drops heavy graphical activity cards
+          base: header
           config_timezone: UTC
           
+          # Sets a beautiful, low-contrast muted color scheme
+          config_presets: nord
+          
+          # Clean, spacious alignment with no icons or extra lines
+          config_padding: 4%
           config_order: base.header, languages
           
+          # Minimalist languages chart (simple text percentages instead of massive bars)
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_limit: 5
+          plugin_languages_limit: 4
           
+          # Quietly tracks total public repo counts in the header background
           plugin_repositories: yes
           plugin_repositories_affiliations: owner
           plugin_repositories_limit: 0
-          
-          extras_css: |
-            /* Main Name Title */
-            h1 { 
-              color: #81a1c1 !important; 
-            }
-            /* Languages Header Title */
-            .languages .tag, #languages h3 { 
-              color: #a3be8c !important; 
-            }
-            /* Activity Header Title */
-            .activity .tag, #activity h3 { 
-              color: #d08770 !important; 
-            }
-            /* Community Header Title */
-            .community .tag, #community h3 { 
-              color: #b48ead !important; 
-            }
