@@ -36,6 +36,8 @@ jobs:
           sed -i 's/fill="#e1e4e8"/fill="#8A9AA8"/g' github-metrics.svg
           sed -i 's/fill="white"/fill="#8A9AA8"/g' github-metrics.svg
           sed -i 's/fill="#cdd9e5"/fill="#7A8A9A"/g' github-metrics.svg
+          sed -i 's/fill="#58a6ff"/fill="#7A9AA8"/g' github-metrics.svg
+          sed -i 's/fill="#79c0ff"/fill="#7A9AA8"/g' github-metrics.svg
       - name: Generate contribution graph
         uses: Platane/snk@v3
         with:
