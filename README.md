@@ -37,7 +37,7 @@
 
 A file-based C project for managing employee records, payroll, and attendance via CLI—designed to master structs and file handling.
 
-[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/shams-27/EmplyeeManagementSystem)
+[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/shams-27/EmployeeManagementSystem)
 
 </td>
 
