@@ -35,3 +35,13 @@ jobs:
           
           plugin_repositories: yes
           plugin_repositories_affiliations: owner
+          plugin_repositories_featured: shams-27/Auto-GCC
+
+
+
+
+
+
+
+
+          
