@@ -34,6 +34,18 @@
   h2.field, h3.field {
     color: #7A9AA8 !important;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+  * {
+    font-family: 'JetBrains Mono', monospace !important;
+  }
+  h2, h3, .field, text, span, div, small {
+    color: #8A9AA8 !important;
+    fill: #8A9AA8 !important;
+  }
+  h2.field, h3.field {
+    color: #7A9AA8 !important;
+  }
 </style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
