@@ -54,7 +54,21 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
-          git commit -m "Update streak stats and contribution graph" || exit 0
+          git add github-metrics.svg github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
+          git stash
           git pull --rebase origin main
+          git stash pop
+          git add github-metrics.svg github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
+          git commit -m "Update metrics, streak stats and contribution graph" || exit 0
           git push
+        
+
+
+
+
+
+
+
+
+
+          
