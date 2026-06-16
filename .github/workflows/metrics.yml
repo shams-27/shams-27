@@ -37,7 +37,7 @@ jobs:
           github_user_name: shams-27
           github_token: ${{ secrets.METRICS_TOKEN }}
           outputs: |
-            github-contribution-grid.svg?palette=github-dark
+            github-contribution-grid.svg?palette=github-dark&color_snake=#7A9AA8
             github-contribution-grid-snake.gif?palette=github-dark&color_snake=#7A9AA8
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
