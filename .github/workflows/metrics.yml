@@ -33,11 +33,29 @@ jobs:
           plugin_languages_threshold: 0%
       - name: Mute text colors in metrics SVG
         run: |
-          sed -i 's/fill="#e1e4e8"/fill="#8A9AA8"/g' github-metrics.svg
-          sed -i 's/fill="white"/fill="#8A9AA8"/g' github-metrics.svg
-          sed -i 's/fill="#cdd9e5"/fill="#7A8A9A"/g' github-metrics.svg
-          sed -i 's/fill="#58a6ff"/fill="#7A9AA8"/g' github-metrics.svg
-          sed -i 's/fill="#79c0ff"/fill="#7A9AA8"/g' github-metrics.svg
+          python3 << 'EOF'
+          import re
+
+          with open("github-metrics.svg", "r") as f:
+              content = f.read()
+
+          # Replace blue accent colors
+          content = re.sub(r'#58a6ff', '#7A9AA8', content, flags=re.IGNORECASE)
+          content = re.sub(r'#79c0ff', '#7A9AA8', content, flags=re.IGNORECASE)
+          content = re.sub(r'#1f6feb', '#7A9AA8', content, flags=re.IGNORECASE)
+
+          # Replace white/light text
+          content = re.sub(r'#e1e4e8', '#8A9AA8', content, flags=re.IGNORECASE)
+          content = re.sub(r'#cdd9e5', '#7A8A9A', content, flags=re.IGNORECASE)
+          content = re.sub(r'#adbac7', '#7A8A9A', content, flags=re.IGNORECASE)
+
+          with open("github-metrics.svg", "w") as f:
+              f.write(content)
+
+          # Print all unique colors for debugging
+          colors = set(re.findall(r'#[0-9a-fA-F]{3,6}', content))
+          print("Remaining colors:", sorted(colors))
+          EOF
       - name: Generate contribution graph
         uses: Platane/snk@v3
         with:
