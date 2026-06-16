@@ -13,6 +13,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate metrics image
         uses: lowlighter/metrics@latest
         with:
@@ -35,11 +37,16 @@ jobs:
           plugin_isocalendar_duration: full-year
 
       - name: Generate streak stats
-        uses: DenverCoder1/github-readme-streak-stats@v2
+        uses: DenverCoder1/github-readme-streak-stats@main
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          user: shams-27
-          theme: dark
-          hide_border: true
-          date_format: "M j[, Y]"
-          output_path: github-streak.svg
+          options: user=shams-27&theme=dark&hide_border=true&disable_animations=true
+          path: github-streak.svg
+
+      - name: Commit streak stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-streak.svg
+          git commit -m "Update streak stats" || exit 0
+          git push
