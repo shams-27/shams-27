@@ -53,6 +53,10 @@ jobs:
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
+          content = re.sub(
+              content
+          )
+
           # Inject custom CSS
           custom_css = """
             h2, h3, .field, text, span, div, small {
