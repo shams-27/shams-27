@@ -58,11 +58,7 @@
 ## GitHub Statistics
 
 <p align="center">
-  <img width="49%" src="https://github-readme-streak-stats-gules-five.vercel.app?user=ShamsKabir&theme=onedark-duo&hide_border=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ShamsKabir&custom_title=Contribution%20Graph&bg_color=0D1117&color=F85D7F&line=F8D866&point=FFFFFF&area_color=F85D7F&area=true&hide_border=true" width="98%" />
+  <img src="https://github-readme-streak-stats-gules-five.vercel.app?user=shams-27&theme=onedark-duo&hide_border=true" alt="GitHub Streak" />
 </p>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
@@ -75,44 +71,29 @@
 <tr>
 <td width="50%">
 
-### Grade Predictor
-<a href="https://github.com/ShamsKabir/grade-predictor">
-  </a>
-
-**Tech Stack:** HTML, CSS, Basic JavaScript
-
-A client-side CGPA tracker for DIU Software Engineering students to predict grades and calculate results in one seamless session.
-
-[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/ShamsKabir/grade-predictor)
-
-</td>
-<td width="50%">
-
 ### Employee Management System
-<a href="https://github.com/ShamsKabir/EmplyeeManagementSystem">
+<a href="https://github.com/shams-27/EmplyeeManagementSystem">
 </a>
 
 **Tech Stack:** C
 
 A file-based C project for managing employee records, payroll, and attendance via CLI—designed to master structs and file handling.
 
-[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/ShamsKabir/EmplyeeManagementSystem)
+[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/shams-27/EmplyeeManagementSystem)
 
 </td>
-</tr>
 
-<tr>
 <td width="50%">
 
 ### Auto GCC Solution
-<a href="https://github.com/ShamsKabir/tools">
+<a href="https://github.com/shams-27/Auto-GCC">
   </a>
 
 **Tech Stack:** Powershell
 
 Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell command. No manual downloading, no PATH headaches.
 
-[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/ShamsKabir/tools)
+[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/Shams-27/Auto-GCC)
 
 </td>
 </tr>
@@ -127,9 +108,9 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 <p align="center">
   <a href="https://bd.linkedin.com/in/shams-kbr"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   &nbsp;
-  <a href="https://github.com/ShamsKabir"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/shams-27"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
   &nbsp;
-  <a href="mailto:shamskbr27@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:kabir.shams.2002@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 <div align="center">
@@ -146,9 +127,9 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 ## Profile Metrics
 
-![Profile Views](https://komarev.com/ghpvc/?username=ShamsKabir&color=F85D7F&style=for-the-badge&label=Profile+Views)
-![Followers](https://img.shields.io/github/followers/ShamsKabir?style=for-the-badge&color=F85D7F&labelColor=0D1117)
-![Stars](https://img.shields.io/github/stars/ShamsKabir?style=for-the-badge&color=F8D866&labelColor=0D1117)
+![Profile Views](https://komarev.com/ghpvc/?username=shams-27&color=F85D7F&style=for-the-badge&label=Profile+Views)
+![Followers](https://img.shields.io/github/followers/shams-27?style=for-the-badge&color=F85D7F&labelColor=0D1117)
+![Stars](https://img.shields.io/github/stars/shams-27?style=for-the-badge&color=F8D866&labelColor=0D1117)
 
 </div>
 
@@ -162,6 +143,6 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 <div align="center">
 
-<img src="https://github.com/ShamsKabir/ShamsKabir/blob/main/octocat.png?raw=true" />
+<img src="https://github.com/shams-27/shams-27/blob/main/octocat.png?raw=true" />
 
 </div>
