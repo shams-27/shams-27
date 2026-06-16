@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
           user: shams-27
-          template: terminal
+          template: classic
           base: header, activity
           config_timezone: UTC
           config_padding: 4%
