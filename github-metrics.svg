@@ -71,20 +71,19 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="272.66267075327505" height="8" fill="#012456"/>
-                    <rect mask="url(#languages-bar)" x="272.66267075327505" y="0" width="187.33732924672498" height="8" fill="#555555"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="272.66267075327505" height="8" fill="#00f5ff"/>
+                    <rect mask="url(#languages-bar)" x="272.66267075327505" y="0" width="187.33732924672498" height="8" fill="#ff2d78"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#012456" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#00f5ff" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 PowerShell
                             </div>
                             <small>
-                                <div>74 kB</div>
                                 <div>59.27%</div>
                             </small>
                         </div>
@@ -93,12 +92,11 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#555555" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#ff2d78" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 C
                             </div>
                             <small>
-                                <div>50.8 kB</div>
                                 <div>40.73%</div>
                             </small>
                         </div>
