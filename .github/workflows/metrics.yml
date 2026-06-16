@@ -62,4 +62,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
           git commit -m "Update streak stats and contribution graph" || exit 0
+          # The metrics step above may have already committed directly to
+          # main via its own internal committer, so the local checkout can
+          # be behind. Rebase onto the latest main before pushing; the two
+          # commits touch disjoint files, so this should never conflict.
+          git fetch origin main
+          git rebase origin/main
           git push origin main
