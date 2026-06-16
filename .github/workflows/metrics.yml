@@ -72,6 +72,8 @@ jobs:
           git commit -m "Update metrics, streak stats and contribution graph" || true
           git pull --rebase origin main
           git push
+      - name: Dump SVG content
+        run: cat github-metrics.svg
         
 
 
