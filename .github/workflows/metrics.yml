@@ -21,5 +21,5 @@ jobs:
           filename: github-metrics.svg
           base: header, activity, community, repositories
           config_timezone: UTC
+          user: shams-27
           plugin_repositories: yes
-          plugin_repositories_featured: shams-27/shams-27
