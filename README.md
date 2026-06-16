@@ -70,7 +70,7 @@
 <td width="50%">
 
 ### Employee Management System
-<a href="https://github.com/ShamsKabir/EmplyeeManagementSystem">
+<a href="https://github.com/shams-27/EmplyeeManagementSystem">
 </a>
 
 **Tech Stack:** C
