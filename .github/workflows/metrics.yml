@@ -47,23 +47,26 @@ jobs:
           path: github-streak.svg
       - name: Mute text colors in metrics SVG
         run: |
-          sudo apt-get install -y xmlstarlet
-          
-          # Replace all text fill colors
-          xmlstarlet ed -L \
-            -u '//*[@fill="#54aeff"]/@fill' -v '#7A9AA8' \
-            -u '//*[@fill="#0969da"]/@fill' -v '#7A9AA8' \
-            -u '//*[@fill="#0366d6"]/@fill' -v '#7A9AA8' \
-            -u '//*[@fill="#d1d5da"]/@fill' -v '#8A9AA8' \
-            -u '//*[@fill="#959da5"]/@fill' -v '#7A8A9A' \
-            github-metrics.svg
-          
-          # Handle colors inside style attributes
-          sed -i 's/color:#54aeff/color:#7A9AA8/gi' github-metrics.svg
-          sed -i 's/color:#0969da/color:#7A9AA8/gi' github-metrics.svg
-          sed -i 's/color:#0366d6/color:#7A9AA8/gi' github-metrics.svg
-          sed -i 's/color:#d1d5da/color:#8A9AA8/gi' github-metrics.svg
-          sed -i 's/color:#959da5/color:#7A8A9A/gi' github-metrics.svg
+          python3 << 'EOF'
+          with open("github-metrics.svg", "r") as f:
+              content = f.read()
+
+          # Inject custom CSS override before closing </style> tag
+          custom_css = """
+            h2, h3, .field, text, span, div, small {
+              color: #8A9AA8 !important;
+              fill: #8A9AA8 !important;
+            }
+            h2.field, h3.field {
+              color: #7A9AA8 !important;
+            }
+          """
+
+          content = content.replace('</style>', custom_css + '</style>', 1)
+
+          with open("github-metrics.svg", "w") as f:
+              f.write(content)
+          EOF
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
@@ -72,8 +75,6 @@ jobs:
           git commit -m "Update metrics, streak stats and contribution graph" || true
           git pull --rebase origin main
           git push
-      - name: Dump SVG content
-        run: cat github-metrics.svg
         
 
 
