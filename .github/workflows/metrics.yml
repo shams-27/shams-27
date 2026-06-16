@@ -35,7 +35,8 @@ jobs:
       - name: Generate contribution graph
         uses: Platane/snk@v3
         with:
-          github_user_token: ${{ secrets.METRICS_TOKEN }}
+          github_user_name: shams-27
+          github_token: ${{ secrets.METRICS_TOKEN }}
           outputs: |
             github-contribution-grid.svg
             github-contribution-grid-snake.gif
