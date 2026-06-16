@@ -39,22 +39,25 @@ jobs:
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
-          # Replace blue accent colors
-          content = re.sub(r'#58a6ff', '#7A9AA8', content, flags=re.IGNORECASE)
-          content = re.sub(r'#79c0ff', '#7A9AA8', content, flags=re.IGNORECASE)
-          content = re.sub(r'#1f6feb', '#7A9AA8', content, flags=re.IGNORECASE)
+          replacements = {
+              # Blue accent text (most likely culprits for the blue labels)
+              '#54aeff': '#7A9AA8',
+              '#0969da': '#7A9AA8',
+              '#0366d6': '#7A9AA8',
+              '#b6e3ff': '#7A9AA8',
+              '#0a3069': '#6A7A88',
+              # Light/white text
+              '#d1d5da': '#8A9AA8',
+              '#959da5': '#7A8A9A',
+              '#666':    '#7A8A9A',
+              '#777':    '#7A8A9A',
+          }
 
-          # Replace white/light text
-          content = re.sub(r'#e1e4e8', '#8A9AA8', content, flags=re.IGNORECASE)
-          content = re.sub(r'#cdd9e5', '#7A8A9A', content, flags=re.IGNORECASE)
-          content = re.sub(r'#adbac7', '#7A8A9A', content, flags=re.IGNORECASE)
+          for original, muted in replacements.items():
+              content = re.sub(original, muted, content, flags=re.IGNORECASE)
 
           with open("github-metrics.svg", "w") as f:
               f.write(content)
-
-          # Print all unique colors for debugging
-          colors = set(re.findall(r'#[0-9a-fA-F]{3,6}', content))
-          print("Remaining colors:", sorted(colors))
           EOF
       - name: Generate contribution graph
         uses: Platane/snk@v3
