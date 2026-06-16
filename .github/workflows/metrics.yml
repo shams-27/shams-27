@@ -13,7 +13,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      
+
+      - name: Remove stale metrics file
+        run: rm -f github-metrics.svg
+
       - name: Generate metrics image
         uses: lowlighter/metrics@latest
         with:
@@ -32,6 +35,14 @@ jobs:
           plugin_languages_categories: programming, markup, stylesheet, data
           plugin_languages_colors: "C:#7A9BB5, C++:#A67AB5, Bash:#7AB58A, PowerShell:#B5A87A, HTML:#B5775A, CSS:#5AB5A8, JavaScript:#B5B55A, Java:#B5645A, Python:#5A7AB5, Markdown:#999999"
           plugin_languages_threshold: 0%
+
+      - name: Verify metrics SVG was generated fresh
+        run: |
+          if [ ! -s github-metrics.svg ]; then
+            echo "::error::github-metrics.svg was not generated. Check METRICS_TOKEN scopes/validity."
+            exit 1
+          fi
+          echo "File size: $(wc -c < github-metrics.svg) bytes"
 
       - name: Generate contribution graph
         uses: Platane/snk@v3
@@ -52,27 +63,49 @@ jobs:
       - name: Mute text colors in metrics SVG
         run: |
           python3 << 'EOF'
+          import re
+
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
-          # Inject custom CSS override before closing </style> tag
-          custom_css = """
-          <![CDATA[
-            h2, h3, .field, text, span, div, small {
-              color: #8A9AA8 !important;
-              fill: #8A9AA8 !important;
-            }
-            h2.field, h3.field {
-              color: #7A9AA8 !important;
-            }
-          ]]
+          # Markers make this idempotent: any previously injected block
+          # (from this run or any stale prior run) is stripped before
+          # adding exactly one fresh copy. This prevents the override
+          # from ever stacking duplicates again.
+          start_marker = "/* CUSTOM_OVERRIDE_START */"
+          end_marker = "/* CUSTOM_OVERRIDE_END */"
+
+          content = re.sub(
+              re.escape(start_marker) + r".*?" + re.escape(end_marker),
+              "",
+              content,
+              flags=re.DOTALL,
+          )
+
+          custom_css = f"""{start_marker}
+          h2, h3, .field, text, span, div, small {{
+            color: #8A9AA8 !important;
+            fill: #8A9AA8 !important;
+          }}
+          h2.field, h3.field {{
+            color: #7A9AA8 !important;
+          }}
+          {end_marker}
           """
 
-          content = content.replace('</style>', custom_css + '</style>', 1)
+          content = content.replace("</style>", custom_css + "</style>", 1)
 
           with open("github-metrics.svg", "w") as f:
               f.write(content)
           EOF
+
+      - name: Validate SVG is well-formed XML
+        run: |
+          python3 -c "
+          import xml.etree.ElementTree as ET
+          ET.parse('github-metrics.svg')
+          print('github-metrics.svg is valid XML')
+          "
 
       - name: Commit generated files
         run: |
@@ -80,4 +113,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-metrics.svg github-streak.svg github-contribution-grid.svg github-contribution-grid-snake.gif
           git commit -m "Update metrics, streak stats and contribution graph" || exit 0
-          git push --force origin main
+          git push origin main
