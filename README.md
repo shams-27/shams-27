@@ -6,16 +6,6 @@
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shams-27/shams-27/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shams-27/shams-27/output/github-contribution-grid-snake.svg">
-    <img alt="shams-27's Github Contribution Snake" src="https://raw.githubusercontent.com/shams-27/shams-27/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
-
 <!--Profile Metrics-->
 
 <div align="center">
@@ -26,11 +16,6 @@
   <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-streak.svg" alt="GitHub Streak" width="100%" style="display: block; border-radius: 4px;" />
 </div>
   <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-contribution-grid.svg" alt="GitHub Contribution" width="100%" style="display: block; border-radius: 4px;" />
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!;Always+learning+and+growing!" />
-
-</div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
 
@@ -93,3 +78,9 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!;Always+learning+and+growing!" />
+
+</div>
