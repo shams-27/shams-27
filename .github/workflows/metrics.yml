@@ -51,7 +51,6 @@ jobs:
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
-          # Inject custom CSS override before closing </style> tag
           custom_css = """
             h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
