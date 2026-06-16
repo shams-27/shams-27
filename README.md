@@ -20,9 +20,12 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-metrics.svg" alt="GitHub Metrics" width="100%" style="display: block; border-radius: 4px;" />
+
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
+  
   <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-streak.svg" alt="GitHub Streak" width="100%" style="display: block; border-radius: 4px;" />
 </div>
-
+  <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-contribution-grid.svg" alt="GitHub Contribution" width="100%" style="display: block; border-radius: 4px;" />
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!;Always+learning+and+growing!" />
