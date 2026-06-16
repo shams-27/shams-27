@@ -17,24 +17,18 @@ jobs:
       - name: Generate metrics image
         uses: lowlighter/metrics@latest
         with:
-          # Your Personal Access Token to count all 4 repositories
+
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
           
-          # Base setup
           user: shams-27
           template: classic
+          
           base: header, activity, community, repositories
           config_timezone: UTC
           
-          # Modern structural layout options
           config_order: base.header, base.activity, base.repositories, languages
           
-          # Clean, modern layout modifications
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          
-          # This pulls in information for all repos you own into the metrics table
-          plugin_repositories: yes
-          plugin_repositories_affiliations: owner
