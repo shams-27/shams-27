@@ -40,7 +40,6 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 4
           
-          # Quietly tracks total public repo counts in the header background
-          plugin_repositories: yes
-          plugin_repositories_affiliations: owner
-          plugin_repositories_limit: 0
+
+
+          
