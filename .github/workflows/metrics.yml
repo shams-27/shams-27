@@ -52,8 +52,7 @@ jobs:
               content = f.read()
               
           custom_css = """
-          <style>
-                        
+          <style>          
             text, span, div, h2, h3, small, .field {
               color: #8A9AA8 !important;
               fill: #8A9AA8 !important;
