@@ -43,7 +43,7 @@ jobs:
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          options: user=shams-27&theme=onedark-duo&hide_border=true&disable_animations=false
+          options: user=shams-27&theme=onedark-duo&hide_border=true&disable_animations=false&font_family=JetBrains+Mono
           path: github-streak.svg
       - name: Mute text colors in metrics SVG
         run: |
@@ -53,6 +53,10 @@ jobs:
 
           # Inject custom CSS override before closing </style> tag
           custom_css = """
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+            * {
+              font-family: 'JetBrains Mono', monospace !important;
+            }
             h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
               fill: #8A9AA8 !important;
