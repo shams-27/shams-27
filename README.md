@@ -123,9 +123,7 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 ## Profile Metrics
 
-![Profile Views](https://komarev.com/ghpvc/?username=shams-27&color=F85D7F&style=for-the-badge&label=Profile+Views)
-![Followers](https://img.shields.io/github/followers/shams-27?style=for-the-badge&color=F85D7F&labelColor=0D1117)
-![Stars](https://img.shields.io/github/stars/shams-27?style=for-the-badge&color=F8D866&labelColor=0D1117)
+![My GitHub Metrics](https://raw.githubusercontent.com/shams-27/shams-27/main/github-metrics.svg)
 
 </div>
 
