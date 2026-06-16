@@ -68,7 +68,7 @@
                 <h3 class="field">Most used languages</h3>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
-                        <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
+                        <rect x="0" y="0" width="460" height="8" fill="#8A9AA8" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="272.66267075327505" height="8" fill="#b5a87a"/>
