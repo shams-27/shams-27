@@ -7,13 +7,20 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
 
 <!--Profile Metrics-->
-
 <div align="center">
-  <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-metrics.svg" alt="GitHub Metrics" width="100%" style="display: block; border-radius: 4px;" />
-
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-metrics.svg" alt="GitHub Metrics" width="100%" style="display: block; border-radius: 4px;" />
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-streak.svg" alt="GitHub Streak" width="100%" style="display: block; border-radius: 4px;" />
+    </td>
+  </tr>
+</table>
   
-  <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-streak.svg" alt="GitHub Streak" width="100%" style="display: block; border-radius: 4px;" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
+
 </div>
   <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-contribution-grid.svg" alt="GitHub Contribution" width="100%" style="display: block; border-radius: 4px;" />
 
