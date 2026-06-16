@@ -55,8 +55,8 @@ jobs:
           with open("github-metrics.svg", "r") as f:
               content = f.read()
 
-          # Enclosing style rules cleanly inside an isolated <style> tag
-          custom_css = """<style>
+          # Inject custom CSS override before closing </style> tag
+          custom_css = """
             h2, h3, .field, text, span, div, small {
               color: #8A9AA8 !important;
               fill: #8A9AA8 !important;
@@ -64,10 +64,9 @@ jobs:
             h2.field, h3.field {
               color: #7A9AA8 !important;
             }
-          </style>"""
+          """
 
-          # Safe target: replace the closing SVG tag right at the file's end
-          content = content.replace('</svg>', custom_css + '</svg>', 1)
+          content = content.replace('</style>', custom_css + '</style>', 1)
 
           with open("github-metrics.svg", "w") as f:
               f.write(content)
