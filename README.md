@@ -134,9 +134,3 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 </div>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
-
-<div align="center">
-
-<img src="https://github.com/shams-27/shams-27/blob/main/octocat.png?raw=true" />
-
-</div>
