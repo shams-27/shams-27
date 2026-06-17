@@ -73,16 +73,6 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 <div align="center">
 
-### Open for collaborations and freelance opportunities
-
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
-
-</div>
-
-<hr>
-
-<div align="center">
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!;Always+learning+and+growing!" />
 
 </div>
