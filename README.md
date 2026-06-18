@@ -4,6 +4,8 @@
 
 </div>
 
+<img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-contribution-grid.svg" alt="GitHub Contribution" width="100%" style="display: block; border-radius: 4px;" />
+
 <!--Profile Metrics-->
 <div align="center">
 <table>
@@ -16,22 +18,21 @@
     </td>
   </tr>
 </table>
-    <img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-contribution-grid.svg" alt="GitHub Contribution" width="100%" style="display: block; border-radius: 4px;" />
 </div>
 
 <hr>
 
-## Featured Projects
-
 <div align="center">
+
+<h1 style="color:#8FB3C2; font-size:60px;"><b>Featured Projects</b></h1>
 
 <table>
 <tr>
 <td width="50%">
-
-### Employee Management System
-<a href="https://github.com/shams-27/EmployeeManagementSystem">
-  </a>
+  
+<p> </p>
+$\Large\textbf{Employee Management System}$
+<p> </p>
 
 **Tech Stack:** C
 
@@ -43,9 +44,9 @@ A file-based C project for managing employee records, payroll, and attendance vi
 
 <td width="50%">
 
-### Auto GCC Solution
-<a href="https://github.com/shams-27/Auto-GCC">
-  </a>
+<p> </p>
+$\Large\textbf{Auto GCC Solution}$
+<p> </p>
 
 **Tech Stack:** Powershell
 
@@ -59,20 +60,8 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 </div>
 
-<hr>
-
-## Connect With Me
-
-<p align="center">
-  <a href="https://bd.linkedin.com/in/shams-kbr"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  &nbsp;
-  <a href="https://github.com/shams-27"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  &nbsp;
-  <a href="mailto:kabir.shams.2002@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
-
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!;Always+learning+and+growing!" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=27&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!" />
 
 </div>
