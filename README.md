@@ -20,8 +20,6 @@
 </table>
 </div>
 
-<hr>
-
 <div align="center">
 
 <img src="./featured-projects.svg"/>
