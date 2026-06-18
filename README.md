@@ -24,7 +24,7 @@
 
 <div align="center">
 
-<h1 style="color:#8FB3C2; font-size:60px;"><b>Featured Projects</b></h1>
+<img src="./featured-projects.svg" />
 
 <table>
 <tr>
