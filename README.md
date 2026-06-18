@@ -24,7 +24,7 @@
 
 <div align="center">
 
-<img src="./featured-projects.svg" />
+<img src="./featured-projects.svg"/>
 
 <table>
 <tr>
