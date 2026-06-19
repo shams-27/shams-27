@@ -37,35 +37,30 @@
 
 <div align="center">
 
-<img src="./featured-projects.svg"/>
+# Featured Projects
 
-<table>
+<table width="100%">
 <tr>
-<td width="50%">
-  
-<p> </p>
-$\Large\textbf{Employee Management System}$
-<hr>
+<td width="50%" valign="top">
 
-**Tech Stack:** C
+### Employee Management System
 
-A file-based C project for managing employee records, payroll, and attendance via CLI—designed to master structs and file handling.
+Language — `C`
 
-[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/shams-27/EmployeeManagementSystem)
+A file-based C project for managing employee records, payroll, and attendance via CLI.
+
+[![View](https://img.shields.io/badge/View_Repository-gray?style=flat&logo=github&logoColor=white)](https://github.com/shams-27/EmployeeManagementSystem)
 
 </td>
+<td width="50%" valign="top">
 
-<td width="50%">
+### Auto GCC Solution
 
-<p> </p>
-$\Large\textbf{Auto GCC Solution}$
-<hr>
+Language — `PowerShell`
 
-**Tech Stack:** Powershell
+Instantly installs GCC / G++ (MinGW-w64) on Windows with a single command. No manual downloading, no PATH headaches.
 
-Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell command. No manual downloading, no PATH headaches.
-
-[![View Repository](https://img.shields.io/badge/View-Repository-F85D7F?style=for-the-badge&logo=github)](https://github.com/Shams-27/Auto-GCC)
+[![View](https://img.shields.io/badge/View_Repository-gray?style=flat&logo=github&logoColor=white)](https://github.com/Shams-27/Auto-GCC)
 
 </td>
 </tr>
