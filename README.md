@@ -30,7 +30,7 @@
   
 <p> </p>
 $\Large\textbf{Employee Management System}$
-<p> </p>
+<hr>
 
 **Tech Stack:** C
 
@@ -44,7 +44,7 @@ A file-based C project for managing employee records, payroll, and attendance vi
 
 <p> </p>
 $\Large\textbf{Auto GCC Solution}$
-<p> </p>
+<hr>
 
 **Tech Stack:** Powershell
 
