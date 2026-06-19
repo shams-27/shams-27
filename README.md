@@ -49,7 +49,7 @@ Language — `C`
 
 A file-based C project for managing employee records, payroll, and attendance via CLI.
 
-[![View](https://img.shields.io/badge/View_Repository-gray?style=flat&logo=github&logoColor=white)](https://github.com/shams-27/EmployeeManagementSystem)
+[![View](https://img.shields.io/badge/View_Repository-222021?style=flat&logo=github&logoColor=white)](https://github.com/shams-27/EmployeeManagementSystem)
 
 </td>
 <td width="50%" valign="top">
@@ -60,7 +60,7 @@ Language — `PowerShell`
 
 Instantly installs GCC / G++ (MinGW-w64) on Windows with a single command. No manual downloading, no PATH headaches.
 
-[![View](https://img.shields.io/badge/View_Repository-gray?style=flat&logo=github&logoColor=white)](https://github.com/Shams-27/Auto-GCC)
+[![View](https://img.shields.io/badge/View_Repository-222021?style=flat&logo=github&logoColor=white)](https://github.com/Shams-27/Auto-GCC)
 
 </td>
 </tr>
