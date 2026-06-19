@@ -4,6 +4,11 @@
 
 </div>
 
+<!---->
+![Stats](https://raw.githubusercontent.com/shams-27/github-stats-transparent/output/generated/overview.svg)
+![Languages](https://raw.githubusercontent.com/shams-27/github-stats-transparent/output/generated/languages.svg)
+<!---->
+
 <!--Profile Metrics-->
 <div align="center">
 <table>
