@@ -5,8 +5,18 @@
 </div>
 
 <!---->
-![Stats](https://raw.githubusercontent.com/shams-27/github-stats-transparent/output/generated/overview.svg)
-![Languages](https://raw.githubusercontent.com/shams-27/github-stats-transparent/output/generated/languages.svg)
+<div align="center">
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/shams-27/github-stats-transparent/output/generated/overview.svg" alt="GitHub Stats" width="100%" style="display: block; border-radius: 4px;" />
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/shams-27/github-stats-transparent/output/generated/languages.svg" alt="GitHub Languages" width="100%" style="display: block; border-radius: 4px;" />
+    </td>
+  </tr>
+</table>
+</div>
 <!---->
 
 <!--Profile Metrics-->
