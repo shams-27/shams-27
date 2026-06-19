@@ -1,10 +1,8 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=8FB3C2&center=true&vCenter=true&repeat=true&random=false&width=800&lines=Shams+Kabir;Learning+Everyday;Small+Fun+Projects)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=35&duration=3000&pause=1000&color=a5f3fc&center=true&vCenter=true&repeat=true&random=false&width=800&lines=Shams+Kabir;Learning+Everyday;Small+Fun+Projects)](https://git.io/typing-svg)
 
 </div>
-
-<img src="https://raw.githubusercontent.com/shams-27/shams-27/main/github-contribution-grid.svg" alt="GitHub Contribution" width="100%" style="display: block; border-radius: 4px;" />
 
 <!--Profile Metrics-->
 <div align="center">
@@ -19,6 +17,8 @@
   </tr>
 </table>
 </div>
+
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shams-27&theme=github-compact&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <div align="center">
 
@@ -60,6 +60,6 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single PowerShell com
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=27&pause=1000&color=F85D7F&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=27&pause=1000&color=4ade80&center=true&vCenter=true&repeat=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+together!" />
 
 </div>
