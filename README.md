@@ -4,6 +4,8 @@
 
 </div>
 
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shams-27&theme=github-compact&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 <!---->
 <div align="center">
 <table>
@@ -34,8 +36,6 @@
 </table>
 </div>
 -->
-
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shams-27&theme=github-compact&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <div align="center">
 
