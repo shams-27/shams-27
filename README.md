@@ -21,7 +21,7 @@
 
 <div align="center">
 
-### `Featured Projects`
+### Featured Projects
 
 <table width="100%">
   
