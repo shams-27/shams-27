@@ -21,7 +21,7 @@
 
 <div align="center">
 
-# Featured Projects
+### `Featured Projects`
 
 <table width="100%">
   
@@ -29,8 +29,8 @@
   
 <td width="50%" valign="top">
 
-### `Employee Management System`
-[![View](https://img.shields.io/badge/View_Repository-222021?style=flat&logo=github&logoColor=white)](https://github.com/shams-27/EmployeeManagementSystem)
+### Employee Management System
+[![View](https://img.shields.io/badge/View_Repository-6C7A89?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shams-27/EmployeeManagementSystem)
 
 `Language` — `C`
 
@@ -40,8 +40,8 @@ A file-based C project for managing employee records, payroll, and attendance vi
 
 <td width="50%" valign="top">
 
-### `Auto GCC Solution`
-[![View](https://img.shields.io/badge/View_Repository-222021?style=flat&logo=github&logoColor=white)](https://github.com/Shams-27/Auto-GCC)
+### Auto GCC Solution
+[![View](https://img.shields.io/badge/View_Repository-6C7A89?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shams-27/Auto-GCC)
 
 `Language` — `PowerShell`
 
@@ -55,8 +55,8 @@ Instantly installs GCC / G++ (MinGW-w64) on Windows with a single command. No ma
   
 <td width="50%" valign="top">
   
-### `NeatFreak` 
-[![View](https://img.shields.io/badge/View_Repository-222021?style=flat&logo=github&logoColor=white)](https://github.com/shams-27/NeatFreak)
+### NeatFreak
+[![View](https://img.shields.io/badge/View_Repository-6C7A89?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shams-27/NeatFreak)
 
 `Language` — `BASH`
 
@@ -66,8 +66,8 @@ A lightweight Bash script that automatically organizes your Downloads folder by 
 
 <td width="50%" valign="top">
 
-### `Conduit`
-[![View](https://img.shields.io/badge/View_Repository-222021?style=flat&logo=github&logoColor=white)](https://github.com/Shams-27/conduit)
+### Conduit
+[![View](https://img.shields.io/badge/View_Repository-6C7A89?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shams-27/conduit)
 
 `Language` — `HTML` `CSS` `JavaScript`
 
