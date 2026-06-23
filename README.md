@@ -71,7 +71,7 @@ A lightweight Bash script that automatically organizes your Downloads folder by 
 
 `Language` — `HTML` `CSS` `JavaScript`
 
-Working on it.
+A clean, distraction-free study space for DIU students — everything you need for a productive session in one browser tab.
 
 </td>
 
